@@ -1,0 +1,12 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-LiveLinkTest.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"C:\Users\andre\Documents\Unreal Projects\TestUE5\Intermediate\Build\Win64\TestUE5Editor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
+"C:\Users\andre\Documents\Unreal Projects\TestUE5\Plugins\LiveLinkTest\Intermediate\Build\Win64\UnrealEditor\Development\LiveLinkTest\LiveLinkTest.cpp.obj"
+"C:\Users\andre\Documents\Unreal Projects\TestUE5\Plugins\LiveLinkTest\Intermediate\Build\Win64\UnrealEditor\Development\LiveLinkTest\Default.rc2.res"
+/OUT:"C:\Users\andre\Documents\Unreal Projects\TestUE5\Plugins\LiveLinkTest\Intermediate\Build\Win64\UnrealEditor\Development\LiveLinkTest\UnrealEditor-LiveLinkTest.lib"
