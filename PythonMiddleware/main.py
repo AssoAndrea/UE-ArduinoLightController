@@ -11,12 +11,6 @@ s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM, socket.IPPROTO_UDP)
 s.setblocking(False)
 
 
-def rcv_message():
-    try:
-        msg, snd = s.recvfrom(64)
-        print(struct.unpack("IIff", msg))
-    except socket.error as e:
-        print(e)
 
 def read_data():
     d: bytes = ser.readline()
@@ -29,13 +23,11 @@ def send_color_data(color:tuple):
     packet = struct.pack("4f",*color,1)
     s.sendto(packet, (IP,PORT))
     print("send: %s" % packet)
-    rcv_message()
 
 def send_command_data(command:float):
     packet = struct.pack("f",command)
     s.sendto(packet, (IP,PORT))
     print("send: %s" % packet)
-    rcv_message()
 
 if __name__ == '__main__':
 
